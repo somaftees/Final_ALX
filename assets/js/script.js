@@ -8,7 +8,6 @@ const addEventOnElements = function (elements, eventType, callback) {
     elements[i].addEventListener(eventType, callback);
   }
 }
-
 /**
  * MOBILE NAVBAR TOGGLER
  */
