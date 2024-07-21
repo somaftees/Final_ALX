@@ -1,0 +1,304 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  padding: 80px;
+  overflow-x: hidden;
+}
+
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 2;
+  margin: 0;
+}
+
+.tm-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.masonry {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+}
+
+.item {
+
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tm-relative {
+  position: relative;
+}
+
+.tm-block {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 600px;
+}
+
+.tm-block-wider {
+  max-width: 640px;
+  width: calc(100% + 40px);
+}
+
+.tm-block-left {
+  right: 20px;
+  bottom: 20px;
+}
+
+.tm-block-left-2 {
+  right: 60px;
+  top: 15px;
+}
+
+.tm-block-right {
+  padding: 15px 0 20px 20px;
+}
+
+.tm-img-left {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.tm-hero-text {
+  padding: 140px 95px 0;
+}
+
+.tm-block-pad {
+  padding: 67px 63px;
+}
+
+.tm-block-icon {
+  text-align: center;
+  display: block;
+  margin: 0 30px 30px;
+}
+
+.tm-block-brand {
+  position: relative;
+  margin-top: 147px;
+  margin-bottom: 27px;
+}
+
+.tm-block-brand-inner {
+  position: relative;
+  right: 50px;
+  padding: 70px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tm-brand-name {
+  margin: 0 40px 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.tm-bg-dark {
+  background-image: linear-gradient(to right, #074034, #4b806f);
+}
+
+.tm-bg-white {
+  background-color: #92c1a9;
+}
+.tm-text-white {
+  color: #ffffff;
+}
+
+.tm-text-gray-light {
+  color: #212121;
+}
+
+.tm-bg-primary-light {
+  background-color: #72b38d;
+}
+
+.tm-bg-primary-dark {
+  background-color: #5d9785;
+}
+
+.tm-bg-secondary {
+  background-color: #3c8069;
+}
+
+.tm-mt {
+  margin-top: 30px;
+}
+
+.tm-mt-big {
+  margin-top: 50px;
+}
+
+.tm-mb {
+  margin-bottom: 45px;
+}
+
+.tm-mb-small {
+  margin-bottom: 20px;
+}
+
+.tm-text-right {
+  text-align: right;
+}
+
+.tm-text-uppercase {
+  text-transform: uppercase;
+}
+
+
+
+@media (max-width: 1232px) {
+  body {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .masonry {
+    /* Masonry container */
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .tm-container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 540px) {
+  .tm-block-brand-inner {
+    flex-direction: column;
+    padding: 35px;
+    right: 30px;
+  }
+
+  .tm-brand-name {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 50px;
+  }
+
+  .tm-block-pad {
+    padding: 45px;
+  }
+
+  .tm-hero-text {
+    padding: 50px 45px 0;
+  }
+
+  .tm-block-brand {
+    margin-top: 70px;
+  }
+}
+
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+.button p {
+  z-index: 1;
+}
+
+.button:hover {
+  color: #aad4c4;
+}
+
+.button:active {
+  border-color: teal;
+}
+
+.button::after, .button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.button:hover:before {
+  transform: translateX(-1em);
+}
+
+.button:hover:after {
+  transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: teal;
+}
+
+@media (max-width: 417px) {
+  .tm-block-left,
+  .tm-block-left-2 {
+    right: 0;
+  }
+
+  .tm-block-wider {
+    width: 100%;
+  }
+
+  .tm-footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    padding: 40px 20px 10px;
+  }
+}
