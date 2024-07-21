@@ -1,4 +1,3 @@
-/* CSS reset */
 *,
 *::after,
 *::before {
@@ -15,25 +14,18 @@ body {
   position: relative;
 }
 
-/* Typography =======================*/
-
 /* Headings */
 
-/* Main heading for card's front cover */
 .card-front__heading {
   font-size: 1.5rem;
   margin-top: .25rem;
 }
 
-/* Main heading for inside page */
 .inside-page__heading { 
   padding-bottom: 1rem; 
   width: 100%;
 }
 
-/* Mixed */
-
-/* For both inside page's main heading and 'view me' text on card front cover */
 .inside-page__heading,
 .card-front__text-view {
   font-size: 1.3rem;
@@ -70,7 +62,6 @@ body {
   color: #333;
 }
 
-/* Icons ===========================================*/
 
 .card-front__icon {
   fill: #fafbfa;
@@ -79,8 +70,6 @@ body {
   margin-top: -.5rem;
   width: 3.25rem;
 }
-
-/* Buttons =================================================*/
 
 .inside-page__btn {
   background-color: transparent;
@@ -154,7 +143,7 @@ body {
   transform: scaleY(1);
 }
 
-/* Layout Structure=========================================*/
+
 
 .main {
   background: linear-gradient(
@@ -169,7 +158,6 @@ body {
   width: 100%;
 }
 
-/* Container to hold all cards in one place */
 .card-area {
   align-items: center;
   display: flex;
@@ -179,9 +167,6 @@ body {
   padding: 1rem;
 }
 
-/* Card ============================================*/
-
-/* Area to hold an individual card */
 .card-section {
   align-items: center;
   display: flex;
@@ -189,8 +174,6 @@ body {
   justify-content: center;
   width: 100%;
 }
-
-/* A container to hold the flip card and the inside page */
 .card {
   background-color: rgba(0,0,0, .05);
   box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
@@ -200,9 +183,6 @@ body {
   width: 15rem;
 }
 
-/* Flip card - covering both the front and inside front page */
-
-/* An outer container to hold the flip card. This excludes the inside page */
 .flip-card {
   height: 15rem;
   perspective: 100rem;
@@ -214,13 +194,10 @@ body {
   z-index: 100;
 }
 
-/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
-/* This is done so content in the inside page can be selected */
 .flip-card > * {
   visibility: visible;
 }
 
-/* An inner container to hold the flip card. This excludes the inside page */
 .flip-card__container {
   height: 100%;
   position: absolute;
