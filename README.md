@@ -22,7 +22,7 @@ Static Personal Portfolio Website Using HTML CSS & JavaScript
 
 ### Challenges
 - Challenge: Making the website responsive across different devices.
-- 
+   
 ## Achievements
 - Successfully implemented an appealing design that looks great.
 - Enhanced user experience with interactive elements and smooth scrolling.
